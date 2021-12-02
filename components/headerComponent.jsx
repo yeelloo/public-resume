@@ -8,13 +8,13 @@ import stickyLogo from "../public/images/sticky-logo.png";
 
 const Header = (props) => (
   <>
-    <header className="site-header header_trans-fixed" data-top="992">
+    <header className={styles.siteHeader} data-top="992">
       <div className="container">
         <div className={styles.headerInner}>
-          <div className="toggle-menu">
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
+          <div className={styles.toggleMenu}>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
           </div>
 
           <div className="site-mobile-logo">
@@ -24,8 +24,8 @@ const Header = (props) => (
             </a>
           </div>
 
-          <nav className="site-nav">
-            <div className="close-menu">
+          <nav className={styles.siteNav}>
+            <div className="closeMenu">
               <span>Close</span>
               <i className="ei ei-icon_close"></i>
             </div>
